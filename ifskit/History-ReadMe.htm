@@ -1,0 +1,673 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>IFS Construction Kit History</title>
+
+</head>
+<body>
+<h2>2021</h2>
+<p><b>January 13</b><br>
+A warning message is now displayed when the scale for the fractal window is frozen and an attempt is made to change the scale.</p>
+<p>The delete button will now only clear the fractal window and will work even if the fractal window is not active. The shortcut for deleting a background picture has been removed from the design menu.</p>
+<p>Fixed a bug when canceling the swap transformations window that caused the color of the first function in the IFS to be changed to black.</p>
+<p>Fixed a bug that caused the program to crash if a 31st IFS was added to the list of fractals. A warning message is now displayed if there are already 30 IFSs in the list and an attempt is made to add another IFS.</p>
+<h2>2019</h2>
+<p><b>April 11:</b><br>
+Minor bug fix
+</p>
+<h2>2018</h2>
+<p><b>June 27:</b><br>
+An observant user noticed that the comment symbol in the IFS window still appeared after editing to remove all comments. Now fixed.<br>
+Also fixed an issue when specifying a number of maps smaller than the current value but then clicking outside that textbox rather than pressing the Enter key.</p>
+<h2>2016</h2>
+<p><b>May 28:</b><br>
+At the request of a user, the "Draw this many..." dialog box now also allows for specifying how many iterations to plot in the deterministic method.</p>
+<h2>2015</h2>
+<p><b>August 7:</b><br>
+Some bug fixes.</p>
+<h2>2014</h2>
+<p><b>August 1:</b><br>
+In the Line Fractal design, there are now four choices for oriented segments mimicking ideas from turtle Logo. These are replacing a line segment with the generator on the left side in the forward direction, on the right side in the forward direction, on the left side in the backward direction, and on the right side in the backward direction. In addition, it is no longer to move the last point at (1,0) to insure that the iterations are continuous curves as intended.</p>
+<p>
+Fixed a problem with the colors in the deterministic mode using the IFS color scheme when images from different functions would overlap. Now in the final image, the color used for a point that is the image under several functions in the IFS will be the color for the function with the smallest index. 
+</p>
+<p>
+Bug fixes.
+</p>
+<p><b>February 20:</b><br>
+Several changes based on feedback from users.<br>
+The "Draw this many..." dialog has been modified so you can choose to draw either an additional fixed number of points or to draw until a specified number of points have been plotted.<br>
+There is an option in the Symmetric Binary Tree design example to allow the creation of non-symmetric trees.<br>
+Recursion can be used to draw binary trees starting with any initial line segment, not just a vertical unit line segment.</p>
+<p>
+Also includes some bug fixes.
+</p>
+
+<p><b>January 4:</b><br>
+Rewrote parts of the program to avoid the use of several Microsoft support files that no longer come with Windows 7 and Windows 8. However, the file mscomctl.ocx is still needed. If you start the program and receive an error message about this file being missing or not registered, look in the <a href="https://larryriddle.agnesscott.org/ifskit/install.htm">Installation Issues</a> section of the website for instructions on how to download and install the file.</p>
+<h2>2013</h2>
+<p><b>June 24:</b><br>
+Several changes based on feedback from users.<br>
+The initial polygon is now drawn with dashed lines rather than dots in the design window. This helps to see the initial polygon if the grid is displayed (which is shown with dots).<br>
+When drawing in deterministic mode and choosing a fill color for an initial rectangle, triangle, circle, or polygon, if you right click on the color box or the fill color button, the line color for the boundary will automatically be set to be the same as the fill color chosen. No longer necessary to choose the same color twice.<br>
+When drawing in random mode, points for functions that have the same color as the background color for the fractal window will be computed but not plotted. This helps to draw just part of a fractal.<br>
+You can now set the size of the points used in tracing an orbit from the Draw\Trace menu.</p>
+<p>
+Bug fixes.
+</p>
+<p><b>May 22:</b><br>
+Fixed a silly mistake that prevented some math expressions in the dialog box for designing symmetric fractal from being evaluated.</p>
+<p>
+Deleting IFS items from the Fractal menu list will no longer make any changes to the IFS window.
+</p>
+<p><b>April 2:</b><br>
+A new design example has been added to draw symmetric fractals. These are created using either the cyclic group Z<sub>n</sub> of order n or the dihedral group D<sub>n</sub> of order 2n. To design a symmetric fractal you start by either defining a contractive affine transformation to use as the base or by selecting an IFS from the list in the Fractals menu. The attractor for the new IFS will have the symmetry corresponding to the symmetry group used.
+</p>
+<p>
+Since the IFS for symmetric fractals can have a large number of functions, the maximum number of functions for an IFS was increased to 100. This necessitated some changes in the color palettes which had to be increased from 64 to 100 colors. It also required a new way to select a particular IFS in the design window when there were more than 20 functions. IFS functions 1 to 9 are selected by typing the appropriate number. IFS functions 10 to 99 are selected by holding down the shift key and typing the two digits.
+</p>
+<p>At the request of a power user you can now have different grid sizes for the x and y axes in the fractal window, mimicking the behavior that was already possible for the design window.</p>
+<p>
+More bug and interface fixes.
+</p>
+<p><b>February 5:</b><br>
+An image can now be used in the fractal window as a background image during the drawing of a fractal using the deterministic method.
+</p>
+<p>
+In the deterministic mode when selecting the design polygon, line, triangle, regular polygon, or circle as an initial set, you can specify the line thickness and line color that is to be used in drawing the initial set as well as the fill color.
+</p>
+<p>
+There is now an option to plot a specific number of points using the random algorithm. This number can be set by the user.
+</p>
+<p>
+When saving a fractal transformation movie as an animated gif, it is now possible to specify the size of the animated gif frames. You can also create at the same time an animated gif movie of the transformation in the design from the initial fractal to the final fractal. The fractal window and design window in the fractal transformation window can now each be zoomed and shifted independently of each other.
+</p>
+<p>
+Bug and interface fixes.
+</p>
+<h2>2012</h2>
+<p><b>October 26:</b><br>
+Several changes based on user feedback.</p>
+<p>
+You can specify a different scale for the x and y axes when setting the grid size in the Design window and the line fractal design window. This helps in designing initial polygons and line fractals by making it easier to snap the location of points to specific positions during the design stage.
+</p>
+<p>
+It is now possible to specify an initial arbitrary line segment or triangle to use in the deterministic drawing mode.
+</p>
+<p>
+The segments in the design of a line fractal can now be oriented as "forward" or "backward". Each segment is replaced by the basic motif to that the motif appears to the left of the oriented segment it is replacing. The default status is to have all line segments going "forward". Because of this option, I have added oriented horizontal and vertical unit lines to the list of initial polygons for the Design window.
+</p>
+<p>
+The option to use a pedal triangle has been added to the Sierpinski Triangles design example. You can also specify the size of the triangle by giving the values of the three angles.
+</p>
+<p>
+Fixed a bug that may have prevented tiling during deterministic drawing from working correctly. Also fixed a bug that was causing the fractal image to flash while shifting the image in the fractal window.
+</p>
+<p><b>September 17:</b><br>
+The use of a range of gradient colors when draw a fractal has been expanded. You can now choose from 2 to 7 base colors to create the gradient range. Several new gradient coloring options have been added, including coloring a pixel based on how many times that pixel has already been drawn in the fractal (pixel counting). Because of these changes, all the gradient coloring options have now been collected into one dialog box rather than as separate menu items.</p>
+<p>
+You can right click the color box for the first IFS in the functions window to simultaneously set the color for all the functions to whatever is selected for that first one.
+</p>
+<p>
+Some bug fixes and fixes to interface issues are also included in this new version. If you find other strange behaviors or bugs, please let me know.
+</p>
+<h2>2011</h2>
+<p><b>September 15:</b><br>
+Some recent changes in the program caused problems when the program tried to read a corrupted ini file or a corrupted ifs file. Those problems have hopefully been fully addressed, but if not, please let me know. If the program crashes or becomes unresponsive upon start, try deleting the ifs.ini file. A new one will be created the next time the program is run.</p>
+<p><b>August 31:</b><br>
+You can now create an animated gif file consisting of a sequence of iterations of an IFS using the deterministic method (called a Deterministic Fractal Movie). </p>
+<p>Some tweaking was also done with the Fractal Movie Viewer (for displaying the animated gifs). For example, holding down the ctrl key while changing the frame rate will increase or decrease the rate by 100 ms/frame rather than the default 10 ms/frame. The Viewer window will also resize to fit the movie that is being displayed. Some bugs with the Fractal Movie Viewer were fixed that became noticed when movies were played at slow frame rates.</p>
+<p><b>July 11:</b><br>
+At the request of a user, you now have more control over the placement and size of an image that is pasted into the design window or fractal window (either as a background image for the random method or as the initial set for deterministinc method.) </p>
+<h2>2010</h2>
+<p><b>September 13:</b><br>
+Added a mathematical expression parser so you can now enter mathematical expressions in many of the textboxes. The main exception are the textboxes in the IFS window where you must first press ctrl-alt-E to bring up an evaluation dialog box. Copy and paste should also work in textboxes. These changes necessitated a considerable amount of code rewriting, so if any errors or odd behavior slipped by, please let me know.
+</p>
+<p>
+Completed the new design example for drawing line fractals (see July 2 below). The fractals can be drawn quickly with recursion if that option is selected. Line fractal designs can be saved to a file and read back into the program. Also modified the Koch curve with n-gon design example to use recursion. See the program help for additional details.
+</p>
+<p>
+Fixed an assortment of bugs and interface issues.
+</p>
+<p><b>June 18:</b><br>
+A new design example has been added to allow investigation of Koch curves with n-gons. Choose a number <i>c</i> with 0 &lt; <i>c</i> &lt; 1 that defines the length of a removed subinterval from a line of length 1, and an integer <i>n</i> &ge; 3 that defines a regular <i>n</i>-gon that replaces the removed segment. This produces the (<i>n</i>, <i>c</i>)-Koch curve. This example is based on a paper by Tam&aacute;s Keleti and Elliot Paquette in the <i>American Mathematical Monthly</i>, Vol. 117, No. 2 (February 2010).</p>
+<p>
+At the suggestion of a user, a status bar has been added to the bottom of the main window to show the full path of files listed in the "Open Recent" submenu when you move the mouse over them. Please send suggestions for other uses for this status bar.
+</p>
+<p>
+You can now enter fractions in many text boxes that handle numerical (non-angular) values. There is limited error checking, however, so if there is a problem parsing the numerator, the value of the numerator is set to 0, and if there is a problem with the denominator, the value of the denominator is set to 1. 
+</p>
+<p>
+In the functions window, pressing the Escape key while entering a new numerical value in a text box (but before pressing the Enter key or moving to another text box) will restore the original value.</p>
+<p>
+There are submenus under the File menu to save the images in the fractal and design windows to a file. For images in design examples dialog boxes for box fractals, triangles, Sierpinski triangles, Koch curves, tilings with integer matrices, and Pythagorean trees, you can now right click on the image to access a contextual menu to copy the image to the clipboard or save the image to a file.
+</p>
+<p>All dialog boxes for opening or saving images should now be able to handle images in gif, png, jpg, or bitmap format.</p>
+<p>
+Holding down the shift key when making a square selection rectangle in the fractal window had gotten broken somehow. Should be fixed now. Also  fixed some other stray user interface issues and inconsistencies, hopefully without creating additional ones.
+</p>
+<p><b>May 28:</b><br>
+The program has been re-written to avoid the use of common dialog commands in the comdlg32.ocx file. This should eliminate the problem about this component or one of its dependencies being not correctly registered or missing. However, you still must have the file comdlg32.dll in your system32 folder. All versions of Windows should have that installed automatically. You must also have the file mscomctl.ocx in your system32 folder. If you get an error message when you start the program about this file being missing or not correctly registered, see the section on the download page about installation issues.</p>
+<p>
+An "Open Recent" submenu item has been added to the File menu to allow you to quickly re-open ifs or chaos game files. Up to 6 recently opened files will be displayed.
+</p>
+<p>
+The program will show at most 30 iterated function systems in its Fractals menu. It should now better handle attempts to open files with more than 30 systems or to append items that would extend the list beyond 30.
+</p>
+<p><b>May 3:</b><br>
+Zoom out and zoom in buttons have been added to the toolbars in the fractal and design windows.
+</p>
+<p>
+Zoom requests are now handled immediately. So if a fractal is being drawn with the random algorithm and you click on zoom out or zoom in, the window scale will be adjusted and the fractal will immediately start to redraw from the beginning. The same thing will happen if you press the Home key to restore the window to its default scale. In the deterministic algorithm mode, the fractal window will revert back to the initial set after the zoom operation is performed.
+</p>
+
+<p><b>April 26:</b><br>
+On the suggestion of a user, a toolbar has been added to the fractal window with buttons to draw the fractal. This button changes to a "stop" button while the fractal is being drawn. Additional buttons on the toolbar allow you to show or hide the axes, fixed points, and/or the grid in the fractal window.
+</p>
+<p>
+There is now a menu item to show/hide the tool tips for the main toolbar and the toolbars in the fractal and design windows. This choice is saved in the program's ini file and thus is preserved for the next time the program starts.
+</p>
+<p>
+Changes to the color palette are now reflected immediately in the design window and in the preview window if displayed.
+</p>
+<p><b>April 20:</b><br>
+A programming error has been fixed that caused the program to crash when selecting "Design Initial Polygon" from the Design menu.
+</p>
+<p><b>February 8:</b><br>
+The design example "Irregular Sierpinski Triangles" has been re-named to just "Sierpinski Triangles". There are now more options in modifying the classical Sierpinski triangle construction with equilateral triangles. In particular, you can now draw twisted Sierpinski triangles in which at each iteration the new vertices are moved a small amount in a random direction.
+</p>
+<p>
+Changes made in the design window after creating a symmetric binary tree or a Pythagorean tree were not being handled correctly. They should be now.
+</p>
+<p><b>January 19:</b><br>
+Some additional improvements to working in the design window. When one of the functions is selected, the cursor will change as you move it over different parts of the design or the bounding squares to indicate the operations that can be performed to modify the design (move, scale, shear, or rotate). The design toolbar can now wrap to a second row if the design window is resized smaller than the toolbar. Finally, at the request of a user, the background color for the design window and the color of the axes can be modified just as with the fractal window.
+</p>
+<p>
+Changing the line style in the design window would occasionally also make the axes or grid lines become thicker. That should no longer happen.
+</p>
+<p><b>January 5:</b><br>
+Several changes have been made to the design window on the basis of feedback from a user. First, the design window now has its own toolbar to quickly handle some of the basic operations while working with the design of an IFS. These toolbar buttons can substitute for menu or keyboard commands. Second, you can now set three line styles (thin, medium, thick) for the display of an IFS design. The thick style may be helpful for display in a large room. Third, the dialog box for adjusting the moves in a chaos game design has been tweaked to allow the user to enter a scaling factor or a rotation angle in a textbox rather than just using a slider.
+</p>
+<p>
+The program should now better handle attempts to open an incorrectly formatted ifs or chaos game file.
+</p>
+<h2>2009</h2>
+<p><b>August 3:</b><br>
+At the request of a user, you can now resize an image that had been loaded from disk or pasted from the clipboard into the fractal window to be used as an initial set for drawing a fractal with the deterministic method. This is done by clicking on the image with the right mouse button after the image is loaded or pasted (currently selected, so surrounded by dashed lines). The image can be re-selected later so that it can be moved or resized again by pressing the Esc key before any iterations are done in drawing the fractal. This also works for images loaded or pasted into the design window.</p>
+<p><b>July 13:</b><br>
+Added a new design example to draw Pythagorean tree fractals. These are best drawn using the deterministic method.</p>
+<p>
+Also made some modifications in how symmetric binary trees are drawn under the deterministic method to mimic the techniques for the Pythagorean trees.
+</p>
+<p><b>June 26:</b><br>
+You can now choose a coloring IFS whose attractor is a filled unit square when using the color stealing scheme to color a fractal (see the June 17 entry below). This choice will use all the colors available in the input image, and is the default choice when color stealing is chosen as the IFS coloring scheme.</p>
+<p>
+Also took the opportunity to correct a few bugs with the implementation of the color stealing algorithm in the initial design. 
+</p> 
+<p><b>June 17:</b><br>
+A new coloring scheme for drawing the fractal has been added. This scheme is based on the idea of "color stealing" developed by Michael Barnsley and works only with the random algorithm. The color used to plot a point during the random iteration for the drawing IFS is determined by iterating a second coloring IFS on top of an input image in sync with the drawing IFS. The color of the point where the coloring IFS lands on the input image is used to plot the current point for the drawing IFS. The colors for the drawing IFS are "stolen" from the input image. A default input image of colorful fall leaves is provided, but you can use any image you want. A folder of possible images is included with the download.</p>
+<p>
+A line of code had been inadvertently deleted at some point with the consequence that trying to resize a design along the bottom edge of the bounding box would actually resize along the top edge. That line has now been put back so resizing should now work correctly.
+</p>
+<p><b>May 18:</b><br>
+At the request of a user, the number of points plotted in the preview window can now be increased or decreased. Use the plus/minus keys on the keyboard to increase or decrease the number by 500 points.</p>
+<p>Updated the Help file to reflect some of the recent changes.</p>
+<p><b>May 13:</b><br>
+An overlooked bit of missing code in the swap transformation routine could sometimes cause the program to crash when quitting. I believe that has been fixed.</p>
+<p><b>May 8:</b><br>
+A major change has been made to how designs can be created or modified in the Chaos Game mode. A dialog box is now available that allows the user to specify moves for the fixed points. Sliders are provided for adjusting the scaling factor towards a fixed point and rotation around a fixed point. With the Preview window displayed you can watch the fractal evolve as you change the slider.</p>
+<p>
+Added a menu item that allows you to swap the position of two maps in the iterated function system. This is primarily of interest when creating a fractal movie to match up the maps in each IFS that you want to be averaged as the frames of the movie are created.
+</p>
+<p>
+Hopefully corrected some bugs and design flaws without creating new ones!
+</p>
+<p><b>February 9:</b><br>
+Added two options to the Fractal Movie Creator. You can now select to "cycle back to the beginning" when creating a movie. This will interpolate from the initial IFS  to the final IFS , then repeat going backwards to the first IFS, so you start and end with the same fractal image. When you choose the same IFS for the initial and final fractal, you can also choose whether to rotate counterclockwise or clockwise when creating successive frames in the fractal movie.</p>
+<p><b>February 2:</b><br>
+You can now create a fractal movie that consists of a sequence of movie frames that evolve from the fractal of an initial IFS (first frame) to the fractal for a final IFS (last frame). The individual frames can be saved to the disk, or you can save the movie as an animated gif. A Fractal Movie Viewer is provided to view a movie saved as an animated gif. Please let me know if you encounter any problems with this new feature.</p>
+<p>
+A new design example is provided for constructing irregular Sierpinski triangles. These allow you to choose points located anywhere along the three sides of a triangle, not just at the midpoints of the side (as in the traditional Sierpinski triangle).
+</p>
+<p>
+Images in the fractal and design windows can now be saved in gif, png, or bitmap format. Saving in gif or png format requires that the  FreeImage.dll file be located in the same folder as the IFS Construction Kit program (or in the windows/system folder). FreeImage.dll will be downloaded in the same zip file as IFS Construction Kit for easy installation.
+</p>
+<p>Fixed a few minor design issues and bugs.</p>
+<h2>2008</h2>
+<p><b>November 28:</b><br>
+An alert user noticed some issues with deleting items from the IFS list in the Fractal menu. These have been resolved.
+</p>
+<p><b>October 20:</b><br>
+Improved the algorithm for scaling the fractal window when choosing "scale to fit" (ctrl-W). This should make the window scale behave more consistently.
+</p>
+<p>
+You can now press the Escape key when loading a file or pasting an image into the Design or Fractal window to finalize the position of the image. You can also press the Escape key when a polygon is selected in the Design window in the IFS mode or when a fixed point is selected in the chaos game mode and that polygon or fixed point will be deselected.
+</p>
+<p>
+You can now press ctrl-alt-G to bring up a dialog box where you can enter your own grid size for the Design or Fractal window.
+</p>
+<p>
+Fixed some issues with undo in the Design window.
+</p>
+<p>
+Several changes to the Chaos Game mode. The default is now to use proportional probabilities when drawing the fractal based on the design in the chaos game. Changing the Functions window to the matrix or rotation form while in the Chaos Game mode should lock the form so changes cannot be made. That was not working correctly but should now be ok. The one exception is that you can still change the probabilities in those forms.
+</p>
+<p>
+You can now save the chaos game moves to a file with extension ".chg", and can open files with that extension while in the Chaos Game mode. When the program is started it will check first for a "default.ifs" file. In no such file is found, it will check for a "default.chg" file and if that file exists, the program will begin in the Chaos Game mode and load the chaos game moves found in the default file. If you register the ".chg" extension, you can also double click on a .chg file to start the program in Chaos Game mode and load that file.
+</p>
+<p>
+You can now click on the reference point in the chaos game to move the point to another location while holding down the left mouse button. Press the shift key to snap the point to the nearest grid point if the grid is turn on in the Design Window.
+</p>
+<p>
+You can select a fixed point and move it by holding down the shift key and pressing one of the arrow keys (in addition to being able to move the fixed point with the mouse.)
+</p>
+<p><b>August 15:</b><br>
+When an image is loaded from a file or pasted from the clipboard, it can now be positioned where desired in the design or fractal window. As long as the image is surrounded by a dotted line, you can move it with the mouse to a different location. Click anywhere outside the image to make it part of the window.  This is particularly useful when using the image as the initial set for the deterministic method in the fractal window.</p>
+<p>
+You can now zoom in when using the random method in the fractal window. 
+</p>
+<p><b>July 11:</b><br>
+Images drawn in the fractal window will now shift without being redrawn when the arrow keys are used to shift the fractal viewing window. Zooming the viewing window, however, will still cause the image to be redrawn from scratch.
+</p>
+<p>
+Once the .ifs extension is registered to IFS Construction Kit, double clicking a file with .ifs extension will start IFS Construction Kit with that file.
+</p>
+<p>
+Help buttons have been added to the windows for the various example methods for constructing iterated function systems, and for the tiling options window. These will open the help file directly to that topic.
+</p>
+<p>
+Tiling can now use all four IFS color schemes. Also fixed a bug in trying to tile in the deterministic method.
+</p>
+<p>
+The selection rectangle will no longer disappear if the fractal window is covered by another window. Also fixed a bug in copying a selected region in the fractal window.
+</p>
+<p><b>June 26:</b><br>
+You can now play what I call the Sierpinski Triangle Game, which is based on the Chaos Game at Bob Devaney's website http://math.bu.edu/DYSYS/applets/chaos-game.html. The game presents a number of subtriangles coming from the iteration of the functions defining the Sierpinski triangle. A target subtriangle is colored red and the goal of the game is to move a dot from a corner of the original triangle into the interior of the target triangle in as few moves as possible. Other variations of the game allow for one or three of the iterations to involve rotations around a fixed point.</p>
+<p>
+You can now display a grid in the design and fractal windows. The grid comes in four sizes: 0.05, 0.1, 0.125, and 0.25. You can use the grid to help design an initial polygon in the design window, or to create or move fixed points in the chaos game mode. When the grid is displayed, new design vertices or fixed points will snap to the nearest corner of the grid. In addition, the plus/minus keys will rotate through the four available grid sizes.
+</p>
+<p>
+An option has been added to allow the initial figure in the deterministic method to consist of the current design polygon filled with a color of the user's choice.
+</p>
+<p>
+The program will now start in the same state as when last quit in terms of whether the functions, fractal, and design windows are visible or hidden.
+</p>
+<p>
+Fixed some issues in drawing initial sets in the deterministic method and some inconsistent scaling in the design window in the chaos game mode. Also, the ability to manually change the design window view got turned off for some reason during previous work. That has been fixed. There is also some better error checking on the numbers entered for the fractal and design window views.
+</p>
+<p><b>February 11:</b><br>
+In addition to displaying the functions in an IFS in a compact matrix form as a single row (the way the program has always worked), you can now also display them in a standard matrix function format, with the matrix shown in 2x2 format and the translation vector shown in 2x1 format.</p>
+<p>
+The IFS fractal is drawn in an image pane that is part of the fractal window. This image pane is resized as the fractal window is resized. Now you can specify a fixed size for the image pane and that size will not change if the fractal window changes. If the fractal window is too small to contain the image pane, scroll bars will be added. The image pane can be as large as 12 inches by 12 inches. This is really only useful if you want to copy the fractal image into another program (e.g. a graphics program) rather than just viewing it on screen.
+</p>
+Holding down the shift key when selecting one of the corners of a design rectangle will restrict the scaling to be proportional in both directions.
+<p>
+Some inconsistencies in the user interface have been corrected, and other bugs squashed. Hopefully no new bugs have been created, but please let me know if any problems occur.
+</p>
+
+<p><b>January 17:</b><br>
+You can now open a Preview window (from the Design menu) that displays a quickly drawn approximation to the IFS image (about 2000 points). As you modify an IFS design in the Design window, either by using the mouse to make changes, or using keyboard shortcuts, or using a  command from the Draw menu, the preview will update simultaneously (well, at least if you have a relatively fast computer) to reflect the design changes. This also works with Chaos Game designs. You can also use the Preview window to see a quick preview of an IFS chosen from the Fractal menu. Let me know if there is anything that doesn't work quite right with the previews.</p>
+<p><b>January 4:</b><br>
+Color palettes of up to 64 colors (used for drawing the IFS) are now saved and read with colors given in RGB format (red, green, and blue values). Palette files are saved with the extension "map" and are compatible with Fracint map files. Since these are just text files, you can create your own map files containing the RGB colors you want to use. The old "ifp" palette files (which stored the colors as Visual Basic long integers) can still be read by the program. There are also now more ways to modify the colors in the color palette from within the program.
+</p>
+<p>
+In attempting to make some of the error messages the program displays more useful, I inadvertently created my own error. Also overlooked one area that needed changing when increasing the number of functions from 20 to 64. Both of these should now be fixed.
+</p>
+
+
+
+<h2>2007</h2>
+<p><b>December 17:</b><br>
+At a user's request, the maximum number of functions in an IFS has been increased from 20 to 64. As a result, the IFSkit.ini file from previous versions will no longer be valid. The first time you run the new version, the default values will be used and a new ini file will be created when the program exits.
+</p>
+<p>
+The color palette for drawing fractals now consists of 64 choices. In addition, the number of rows used to construct box fractals and triangle fractals has been increased from 5 to 8.
+</p>
+<p>
+Fixed a few other minor issues discovered while making these changes. But the change from 20 functions to 64 functions had more repercussions than I anticipated, so if I overlooked something please let me know.
+</p>
+
+<p><b>December 11:</b><br>
+When drawing the ifs using the deterministic method, you can now use a regular polygon with from 3 to 9 sides as the initial set. The polygon can be drawn as an outline or as a filled solid. The program will make an attempt to scale the fractal window so that the polygon and all iterates will fit in the window, but  you may still need to zoom out or shift the window. Let me know if you encounter any errors or bugs while trying to use this new feature.</p>
+<p><b>November 12:</b><br>
+An earlier change caused polygons to be incorrectly drawn when choosing from the Design menu to use an initial polygon in the design window. That error has been fixed.
+</p>
+<p>
+Fixed a bug where fixed points were not redrawn in the fractal window when a design was modified and the new fractal was drawn.
+</p>
+
+
+
+<p><b>May 21:</b><br>
+Each function in the IFS can be drawn in a specified color. You can now save that color palette to a file, load a color palette from a file, and edit the current color palette.</p>
+
+<p><b>January 24:</b><br>
+An alert user noticed that the fractal window was not being rescaled when creating a new IFS for a symmetric binary tree after having done one already with the choice of the deterministic drawing algorithm. Should be fixed now.
+</p>
+<p>
+I discovered that a Microsoft security update changed the way the compiled html help files are treated by Internet Explorer in various "security zones", sometimes preventing them from being displayed. If you try to access help from within the program and get the message "Navigation to the webpage was canceled" in your browser window, do the following steps:<br>
+1. Right click on the IFS Help.chm icon and choose Properties.<br>
+2. In the general tab, look at the bottom section. If you see a button that says "Unblock", click it.<br>
+In case this does not work or the file is already unblocked, I added an option to the Help menu to load the help pages from this website in the user's default browser.
+</p>
+<p><b>January 22:</b><br>
+The design for symmetric binary trees now has options to choose the deterministic or random algorithms for drawing the trees. Each option produces a slightly different IFS. Also fixed a few coding errors that had been overlooked.
+</p>
+<p>
+Modified the design dialog boxes to add a Close button. The Cancel button had not always restored the previous IFS correctly. Should be better now.
+</p>
+
+<p><b>January 18:</b><br>
+
+A new design example has been added to draw symmetric binary trees. The
+program can compute the unique scaling ratio necessary to construct a
+self-contact symmetric binary tree.
+</p>
+
+<p>Users now have the option of several coloring schemes. You can
+color the
+IFS fractal based on each function in the IFS, or you can use a
+gradient
+color scheme based on each point's y-coordinate, distance from the
+center
+of the fractal window, or relative position to the fixed points. The
+gradient
+scale can be set by the user.
+</p>
+
+<p>
+You can freeze the scale used for the fractal window. This makes it
+easier to
+draw several IFS fractals in the same window so that a consistent scale
+is
+used when drawing each image.
+</p>
+
+<p>
+Fixed several interface bugs and issues.
+</p>
+
+
+<h2>2006</h2>
+
+<p><b>May 17:</b><br>
+
+The programming code for the Chaos Game mode has been rewritten to
+simplify the design of an IFS based on chaos game moves. You can now
+ctrl-click with the mouse to create a new fixed point at the mouse
+location. When you switch from the IFS mode to the Chaos Game mode,
+your fractal list under the fractal menu will remain intact, but
+disabled. You can save your IFS from a chaos game design to the fractal
+menu list and switch back to IFS mode. If you later switch back to the
+Chaos Game mode, any IFS created in this mode will still be enabled and
+display the chaos game moves. However, if you save such an IFS to a
+file, only the IFS code will be saved so if you want to remember the
+chaos game moves used, include them in a comment.
+</p>
+
+<p>
+If you forget some of the mouse and keyboard shortcuts to use with
+fixed points in the chaos game mode, you can move the mouse pointer
+over the picture box in the lower right corner of the design window
+(where the number of the selected transformation is displayed). The
+pointer will switch to a question mark. Hold down the mouse button over
+this picture box to view a pop-up window containing the shortcuts. The
+window will disappear when you release the mouse button.
+</p>
+
+<p>
+The same mouse trick can be used in IFS mode to remind you of the mouse
+and keyboard shortcuts for working with the selected polygon in the
+design window.
+</p>
+
+<p>
+You can now "zoom in" with the design window.
+</p>
+
+<p>
+Several bugs and interface issues were fixed.
+</p>
+
+<p>
+<b>May 2:</b><br>
+
+At a user's request, you can now shift the viewing window for the
+fractal and design windows using menu selections or the arrow keys.
+This is particularly useful when using the deterministic algorithm and
+trying to see the entire initial picture.
+</p>
+
+<p>
+Tweaked the interface design a bit. If you are working with an IFS that
+already has a name, and you make a change to the IFS code, an asterisk
+will be appended to the end of the name in the IFS window as a visual
+reminder that a change has been made. Also, when selecting a new IFS
+from the fractal menu or loading a new ifs file, the focus will remain
+on the current active window and not automatically jump to the IFS
+window. "Zoom to 100%" in the Draw/Zoom menu has now been replaced by a
+"restore" menu item. This can be used for restoring the viewing window
+to its original dimensions after either shifts or zooms. Let me know if
+there are problems with any of these design choices.
+</p>
+
+<p>Fixed a few bugs with appending new IFS codes from a file to a
+list already in the fractal menu.</p>
+
+<p>
+<b>April 25:</b><br>
+
+A user pointed out that shortcut key presses were sometimes not being
+accepted for the fractal window. Should be fixed now. Also added, at a
+user's request, a small popup help screen about tracing when you hold
+the mouse down on the "trace on/off" box in the lower left corner of
+the fractal window. </p>
+
+<p>
+Fixed a few issues with drawing, loading, and saving an initial polygon
+in the design window.
+</p>
+
+<p>
+<b>April 24:</b><br>
+
+The box fractal design now allows for a 2x2 size (four boxes).
+</p>
+
+<p>
+Added a triangle fractal design option under the examples. This allows
+you to take an equilateral triangle of 2, 3, 4, or 5 rows and subdivide
+it into equal subtriangles, then create a design by removing selected
+subtriangles. For example, using 2 rows (4 subtriangles) and removing
+the middle subtriangle produces the usual Sierpinski Triangle fractal.
+</p>
+
+<p>
+Added an initial polygon for the design window that is an oriented
+equilateral triangle.
+</p>
+
+<p>
+When using the deterministic drawing method, you must start with an
+initial picture in the fractal window. At a user's request, the first
+time you choose the deterministic method, the initial design polygon
+will be used as the picture. You can then change the picture if you
+want something else. There is a new option to use a triangle
+(equilateral or right, outlined or filled) as the picture. In addition,
+if you choose to load a picture from a file, the default coloring
+scheme will be to use the image colors when iterating as this usually
+produces the best results. You can still change to the coloring scheme
+that uses the ifs colors if you prefer.
+</p>
+
+<p>
+In the design window, equilateral triangles are now rotated around the
+centroid of the triangle. All other polygons are rotated around the
+center of the bounding box.
+</p>
+
+<p>
+During some earlier revision of the program, I inadvertently turned off
+the Overlay option when using the deterministic method. That has now
+been fixed.
+</p>
+
+<h2>2005</h2>
+
+
+
+<p>
+<b>June 24:</b><br>
+
+Some of the zoom out options were not working correctly in the Fractal
+window. Should be ok now.
+</p>
+
+<p>
+<b>June 19:</b><br>
+
+A third example design has been added based on the article "Number
+Systems With a Complex Base: A Fractal Tool for Teaching Topology" by
+Daniel Goffinet, American Math. Monthly, March 1991. This allows you to
+construct an IFS determined by a complex number with modulus less than
+1.
+</p>
+
+<p>
+When doing a trace in the Fractal window, it is now possible to specify
+the exact x and y coordinates of the initial seed.
+</p>
+
+<p>
+Corrected an error in the Chaos Game design mode that resulted in the
+wrong probabilities being associated with each function in the IFS.
+</p>
+
+<p>
+<b>May 28:</b><br>
+
+A few more tweaks in the user interface. Resizing the fractal and
+design windows has hopefully been improved to eliminate the annoying
+flickering. I have disabled the maximize button for the IFS, fractal,
+and design windows since maximizing one window made all windows
+maximized, and this was sometimes not helpful. So instead I added a
+maximize and restore item to the Windows menu that mimics the behavior
+of the maximize/restore button. This is a bit non-standard for Windows
+programs so I would be interested in any comments about how well this
+works (or if it doesn't work.)
+</p>
+
+<p>
+When trying to tile the plane with a fractal design, you can now
+measure &Delta;x and &Delta;y between any two points in the
+fractal window. This might help in deciding on what vectors to use in
+the Tiling Options window to describe the translations that form the
+tiling. Hold down the ctrl key and click at the first point. While
+holding down the left menu button, move the cursor to the second point.
+The &Delta;x and &Delta;y values are displayed in the lower
+left corner. Those values and the line will vanish as soon as you
+release the mouse button.
+</p>
+
+<p>
+<b>May 21:</b><br>
+
+A "Tiling Options" menu item has been added to allow one to tile the
+plane with an appropriately designed IFS. This is based on translating
+copies of the IFS fractal in directions given as linear combinations of
+two specified vectors. Two coloring schemes are available.
+</p>
+
+<p>
+Several user interface issues were addressed.
+</p>
+
+<p>
+<b>May 4:</b><br>
+
+One can now create an IFS design that tiles the plane using integer
+matrices. This is based on ideas in the papers
+</p>
+
+<ul>
+
+  <li>
+"Fractal Tilings in the Plane," Richard Darst, Judith Palagallo, and
+Thomas Price, Mathematics Magazine, Vol. 71, No. 1, February 1998,
+12-23. </li>
+
+  <li>
+"Analyzing the Area of Fractal Tilings," Miyuki Breen and Judith
+Palagallo, The Pi Mu Epsilon Journal, Vol. 11, No. 8, Spring 2003,
+413-422.
+  </li>
+
+</ul>
+
+Comments, suggestions, and bugs are greatly appreciated.
+<p>The two design options using Box Fractals and Tilings with
+Integer Matrices are now listed as submenus under "Examples" in the
+Design Menu. </p>
+
+<p>
+<b>March 15:</b><br>
+
+A user reported that the program would crash if one tried to open an
+IFS file while the IFS window was closed, or if one tried to draw to
+the Fractal window while it was closed. Both problems should now be
+fixed. I also took this opportunity to add to the Help menu a link to
+this website and an email link to make it easier to report bugs or
+problems.
+</p>
+
+<p>
+<b>January 10:</b><br>
+
+Added the ability to set the background color of the Fractal window and
+the color of the axes in the fractal window.</p>
+
+<p>
+Added an
+IFSkit.ini file that will save the current locations and sizes of the
+three
+main windows, the colors used to represent each function in the IFS,
+the background color of the Fractal window,
+and the color of the axes in the Fractal window. This file must be in
+the same folder as the
+IFS Construction Kit program. If the program encounters an error when
+trying to read the ini file,
+or if the file does not exist, then the default values will be used and
+a new ini file will be created when you quit the program. Please let me
+know if you run into
+any problems. Corresponding changes have been made to the help files.
+</p>
+
+<h2>2004</h2>
+
+
+<p>
+<b>August 16:</b><br>
+
+Fixed a small bug that prevented fixed points displayed in the fractal
+window from being updated automatically when the user toggled between
+colored points and black points.</p>
+
+<p>
+<b>June 1:</b><br>
+
+Fixed a few bugs including with adding comments and creating a
+rectangle to use as an initial set with the deterministic algorithm.</p>
+
+<p>Added the ability to print the images in the fractal and
+design windows, and the IFS code in matrix form, scaling and rotation
+form, or in terms of chaos game moves. The IFS codes may be "printed"
+to a text file.</p>
+
+<p>Added a "How to..." section to the online help file.</p>
+
+<p> <b>April 24:</b> Initial Release
+</p>
+
+</body>
+</html>
